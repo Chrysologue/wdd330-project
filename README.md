@@ -35,18 +35,18 @@ Travelers will be able to explore itineraries, connect with guides, book tours, 
 
 ## 🗂️ Modules
 
-| Module             | Description |
-|-------------------|-------------|
-| **Homepage**       | Intro to site + country details via REST Countries API. |
-| **Booking**        | Tour selection, booking form + currency conversion via ExchangeRate API. |
-| **Itinerary**      | Filtered selection of destinations from JSON. |
-| **Guide Profile**  | Bio, experience, and reviews (JSON-driven). |
-| **Instant Chat**   | Basic chat with local storage support. |
-| **Reviews**        | Store and display client feedback using JSON. |
-| **Contact Page**   | Form submission with local storage for inquiries. |
-| **Gallery**        | Photo display of key attractions (JSON structure). |
-| **Pricing**        | Package breakdown + real-time currency conversion. |
-| **Navigation**     | SPA-like smooth navigation with responsive UI. |
+| Module            | Description                                                              |
+| ----------------- | ------------------------------------------------------------------------ |
+| **Homepage**      | Intro to site + country details via REST Countries API.                  |
+| **Booking**       | Tour selection, booking form + currency conversion via ExchangeRate API. |
+| **Itinerary**     | Filtered selection of destinations from JSON.                            |
+| **Guide Profile** | Bio, experience, and reviews (JSON-driven).                              |
+| **Instant Chat**  | Basic chat with local storage support.                                   |
+| **Reviews**       | Store and display client feedback using JSON.                            |
+| **Contact Page**  | Form submission with local storage for inquiries.                        |
+| **Gallery**       | Photo display of key attractions (JSON structure).                       |
+| **Pricing**       | Package breakdown + real-time currency conversion.                       |
+| **Navigation**    | SPA-like smooth navigation with responsive UI.                           |
 
 ---
 
@@ -59,16 +59,17 @@ Travelers will be able to explore itineraries, connect with guides, book tours, 
 
 ## 🎨 Graphic Identity
 
-- **Color Palette**  
-  - Background: `#151515`  
-  - Accent Colors:  
-    - Warm Gold: `#F7B05B`  
-    - Bold Red: `#E71D36`  
-    - Soft White: `#FBFBFF`  
+- **Color Palette**
+
+  - Background: `#151515`
+  - Accent Colors:
+    - Warm Gold: `#F7B05B`
+    - Bold Red: `#E71D36`
+    - Soft White: `#FBFBFF`
     - Vibrant Blue: `#00A5E0`
 
-- **Typography**  
-  - Headings: Montserrat  
+- **Typography**
+  - Headings: Montserrat
   - Body Text: Poppins
 
 ---
@@ -76,12 +77,14 @@ Travelers will be able to explore itineraries, connect with guides, book tours, 
 ## 📅 Project Timeline
 
 ### Week 5
+
 - Design HTML structure.
 - Style pages for responsiveness.
 - Implement Homepage and Gallery (with JSON).
 - Start Guide Profile module.
 
 ### Week 6
+
 - Booking module (REST + ExchangeRate API).
 - Itinerary selection (JSON-driven).
 - Instant chat (JavaScript + localStorage).
@@ -89,11 +92,10 @@ Travelers will be able to explore itineraries, connect with guides, book tours, 
 - Pricing/services setup.
 
 ### Week 7
+
 - Contact page.
 - Testing & optimization.
 - Final design tweaks and animation.
 - Deployment.
 
 ---
-
-
