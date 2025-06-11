@@ -9,6 +9,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
+        guideprofile: resolve(__dirname, "src/guide-profile.html"),
+        gallery: resolve(__dirname, "src/gallery.html"),
+        contact: resolve(__dirname, "src/contact.html"),
+        service: resolve(__dirname, "src/service.html"),
       },
     },
   },
