@@ -56,3 +56,37 @@ export function setupLoadHandler(header, navLinks, body) {
     }
   });
 }
+
+function loadTemplate(path) {
+  return fetch(path).then((res) => {
+    if (!res.ok) {
+      throw new Error(`Error: ${res.status}`);
+    }
+    return res.text();
+  });
+}
+export async function loadHeaderFooter() {
+  const header = await loadTemplate("../partials/header.html");
+  const footer = await loadTemplate("../partials/footer.html");
+  const headerTemplate = qs(".header");
+  const footerTemplate = qs(".footer");
+  renderWithTemplate(header, headerTemplate);
+  renderWithTemplate(footer, footerTemplate);
+}
+
+export function renderWithTemplate(template, parentElement) {
+  return (parentElement.innerHTML = template);
+}
+
+export function headerAndFooter() {
+  loadHeaderFooter().then(() => {
+    const header = document.querySelector(".header");
+    const hamburger = document.querySelector(".hamburger-lines");
+    const navLinks = document.querySelector(".navItems");
+    const body = document.querySelector("body");
+
+    setupToggleMenu(header, hamburger, navLinks, body);
+    setupResizeHandler(header, navLinks, body);
+    setupLoadHandler(header, navLinks, body);
+  });
+}

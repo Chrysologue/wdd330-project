@@ -2,4 +2,57 @@
   .navContainer {
     max-width: 1500px;
   }
+
+  /*Styling the hero section*/
+  .hero-content h1 {
+    font-size: 2.7em;
+  }
+
+  .hero-content h2 {
+    font-size: 1.4em;
+  }
+
+  /*styling the country info*/
+  .country-info-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .country-card.full-width {
+    grid-column: span 3;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .destination-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .guide-card-container {
+    gap: 40px;
+  }
+
+  footer .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .about-contact-group {
+    grid-column: span 1;
+  }
+
+  /*Styling the gallery*/
+  .gallery-section h1 {
+    font-size: 44px;
+  }
+
+  .category p {
+    font-size: 1.4rem;
+  }
+
+  .gallery-category img {
+    width: 300px;
+    height: 250px;
+    border-radius: 8px;
+  }
 }

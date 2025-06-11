@@ -1,0 +1,72 @@
+{
+  "culinary": [
+    "/images/culinary/culinary-01.jpg",
+    "/images/culinary/culinary-02.jpg",
+    "/images/culinary/culinary-03.jpg",
+    "/images/culinary/culinary-04.jpg",
+    "/images/culinary/culinary-05.jpg",
+    "/images/culinary/culinary-06.jpg",
+    "/images/culinary/culinary-07.jpg",
+    "/images/culinary/culinary-08.jpg",
+    "/images/culinary/culinary-09.jpg",
+    "/images/culinary/culinary-10.jpg"
+  ],
+  "flagship": [
+    "/images/flagship/flagship-01.jpg",
+    "/images/flagship/flagship-02.jpg",
+    "/images/flagship/flagship-03.jpg",
+    "/images/flagship/flagship-04.jpg",
+    "/images/flagship/flagship-05.jpg",
+    "/images/flagship/flagship-06.jpg",
+    "/images/flagship/flagship-07.jpg",
+    "/images/flagship/flagship-08.jpg",
+    "/images/flagship/flagship-09.jpg",
+    "/images/flagship/flagship-10.jpg",
+    "/images/flagship/flagship-11.jpg"
+  ],
+  "wildlife": [
+    "/images/wildlife/wildlife-01.jpg",
+    "/images/wildlife/wildlife-02.jpg",
+    "/images/wildlife/wildlife-03.jpg",
+    "/images/wildlife/wildlife-04.jpg",
+    "/images/wildlife/wildlife-05.jpg",
+    "/images/wildlife/wildlife-06.jpg",
+    "/images/wildlife/wildlife-07.jpg",
+    "/images/wildlife/wildlife-08.jpg",
+    "/images/wildlife/wildlife-09.jpg"
+  ],
+  "ocean": [
+    "/images/oceans/ocean-01.jpg",
+    "/images/oceans/ocean-02.jpg",
+    "/images/oceans/ocean-03.jpg",
+    "/images/oceans/ocean-04.jpg",
+    "/images/oceans/ocean-05.jpg",
+    "/images/oceans/ocean-06.jpg",
+    "/images/oceans/ocean-07.jpg",
+    "/images/oceans/ocean-08.jpg",
+    "/images/oceans/ocean-09.jpg"
+  ],
+  "horizon": [
+    "/images/horizon/horizon-01.jpg",
+    "/images/horizon/horizon-02.jpg",
+    "/images/horizon/horizon-03.jpg",
+    "/images/horizon/horizon-04.jpg",
+    "/images/horizon/horizon-05.jpg",
+    "/images/horizon/horizon-06.jpg",
+    "/images/horizon/horizon-07.jpg",
+    "/images/horizon/horizon-08.jpg",
+    "/images/horizon/horizon-09.jpg",
+    "/images/horizon/horizon-10.jpg",
+    "/images/horizon/horizon-11.jpg",
+    "/images/horizon/horizon-12.jpg",
+    "/images/horizon/horizon-13.jpg",
+    "/images/horizon/horizon-14.jpg",
+    "/images/horizon/horizon-15.jpg",
+    "/images/horizon/horizon-16.jpg",
+    "/images/horizon/horizon-17.jpg",
+    "/images/horizon/horizon-18.jpg",
+    "/images/horizon/horizon-19.jpg",
+    "/images/horizon/horizon-20.jpg",
+    "/images/horizon/horizon-21.jpg"
+  ]
+}
