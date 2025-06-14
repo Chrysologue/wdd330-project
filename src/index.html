@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore Madagascar with Eco-Tour Guide. Connect directly with expert local guides, discover tailored adventures, and experience the island’s breathtaking nature and culture."
+    />
+    <meta name="author" content="Xyste Chrysologue" />
+    <meta
+      name="keywords"
+      content="Madagascar tours, eco-tourism, local guides, wildlife, adventure travel, sustainable tourism"
+    />
     <title>Eco-Tour Guide</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +38,9 @@
           <h2>
             Connect Directly with Local Experts for Unforgettable Journeys
           </h2>
-          <a href="#" class="cta-button">Find Your Guide Now</a>
+          <a href="guide-profile.html" class="cta-button"
+            >Find Your Guide Now</a
+          >
         </div>
       </section>
 
@@ -90,16 +101,13 @@
             <h3>Popular Destinations</h3>
             <div class="destination-grid">
               <div class="destination-card">
-                <img
-                  src="https://placehold.co/300x200/F8F8F8/333333?text=Isalo+National+Park"
-                  alt="Isalo National Park"
-                />
+                <img src="/images/isalo-park.webp" alt="Isalo National Park" />
                 <h4>Isalo National Park</h4>
                 <p>Explore canyons, sandstone formations, and natural pools.</p>
               </div>
               <div class="destination-card">
                 <img
-                  src="https://placehold.co/300x200/F8F8F8/333333?text=Avenue+of+the+Baobabs"
+                  src="/images/baobab-avenue.webp"
                   alt="Avenue of the Baobabs"
                 />
                 <h4>Avenue of the Baobabs</h4>
@@ -107,7 +115,7 @@
               </div>
               <div class="destination-card">
                 <img
-                  src="https://placehold.co/300x200/F8F8F8/333333?text=Andasibe-Mantadia+NP"
+                  src="/images/andasibe.webp"
                   alt="Andasibe-Mantadia National Park"
                 />
                 <h4>Andasibe-Mantadia NP</h4>
@@ -130,19 +138,19 @@
             <div class="guide-card-container">
               <div class="guide-card">
                 <img
-                  src="https://placehold.co/100x100/E0E0E0/333333?text=Guide+1"
+                  src="/images/aina-avatar.jpg"
                   alt="Guide Profile Picture"
                 />
-                <h4>John Doe</h4>
-                <p>Specialty: Wildlife Photography</p>
+                <h4>Aina</h4>
+                <p>Specialty: Trekking Guide</p>
               </div>
               <div class="guide-card">
                 <img
-                  src="https://placehold.co/100x100/E0E0E0/333333?text=Guide+2"
+                  src="/images/dore-avatar.jpg"
                   alt="Guide Profile Picture"
                 />
-                <h4>Jane Smith</h4>
-                <p>Specialty: Hiking & Culture</p>
+                <h4>Dore</h4>
+                <p>Specialty: Wildlife & Adventure Guide</p>
               </div>
             </div>
             <a href="guide-profile.html" class="cta-button secondary-cta"
@@ -160,6 +168,25 @@
         </div>
       </section>
     </main>
+
+    <!-- Chat modal -->
+    <button class="open-chat-btn" title="Open Chat">💬</button>
+
+    <div class="chat-modal">
+      <div class="chat-header">
+        <h3>Chat with Support</h3>
+        <span class="close-chat-btn">&times;</span>
+      </div>
+      <div class="chat-messages">
+        <div class="message-bubble received">
+          Hello! How can I help you today?
+        </div>
+      </div>
+      <div class="chat-input-area">
+        <input type="text" id="chatInput" placeholder="Type your message..." />
+        <button id="sendMessageBtn">Send</button>
+      </div>
+    </div>
     <footer class="footer"></footer>
   </body>
 </html>

@@ -35,7 +35,6 @@ export class Gallery {
   }
   async init() {
     this.galleries = await this.getData();
-    console.log(this.galleries);
     this.categories.forEach((category) => {
       category.addEventListener("click", () => {
         const galleryName = category.dataset.gallery;

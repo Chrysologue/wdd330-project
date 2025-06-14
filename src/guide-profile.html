@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Meet Madagascar’s top local guides. Explore their expertise in trekking, wildlife, birdwatching, and cultural tours. Read traveler reviews and book your next guided adventure."
+    />
+    <meta name="author" content="Xyste Chrysologue" />
+    <meta
+      name="keywords"
+      content="Madagascar guides, local tour guides, eco-tourism, hiking, birdwatching, cultural travel, guide reviews, wildlife tours"
+    />
     <title>Eco-Tour Guide</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,12 +22,177 @@
     <link rel="stylesheet" href="/style/small.css" />
     <link rel="stylesheet" href="/style/medium.css" />
     <link rel="stylesheet" href="/style/large.css" />
-    <script src="/js/main.js" type="module" defer></script>
+    <script src="./js/guide.js" type="module" defer></script>
   </head>
 
   <body>
     <header class="header"></header>
     <main></main>
+    <section class="guide-section">
+      <div class="guide-container">
+        <h1>Meet our experienced guides</h1>
+        <div class="guide-grid">
+          <div class="guide-panel">
+            <img
+              src="/images/dore-avatar.jpg"
+              alt="Dore Avatar"
+              class="guide-avatar"
+            />
+            <h2 class="guide-name">Dore</h2>
+            <p class="guide-speciality">Wildlife & Adventure Guide</p>
+            <p class="guide-short-bio">
+              Dore is a seasoned English-speaking guide specializing in
+              wildlife, adventure tours, and hiking across Madagascar’s
+              breathtaking landscapes.
+            </p>
+            <button class="view-details" data-id="guide-1">View More</button>
+          </div>
+          <div class="guide-panel">
+            <img
+              src="/images/aina-avatar.jpg"
+              alt="Aina Avatar"
+              class="guide-avatar"
+            />
+            <h2 class="guide-name">Aina</h2>
+            <p class="guide-speciality">Trekking Guide</p>
+            <p class="guide-short-bio">
+              Aina is a passionate hiking guide who leads adventurous treks
+              through Madagascar’s stunning natural landscapes and hidden
+              trails.
+            </p>
+            <button class="view-details" data-id="guide-2">View More</button>
+          </div>
+          <div class="guide-panel">
+            <img
+              src="/images/feno-avatar.jpg"
+              alt="Feno Avatar"
+              class="guide-avatar"
+            />
+            <h2 class="guide-name">Feno</h2>
+            <p class="guide-speciality">Expert Birding Guide</p>
+            <p class="guide-short-bio">
+              Feno is a birdwatching expert with deep knowledge of Madagascar’s
+              unique avian species, offering immersive wildlife experiences.
+            </p>
+            <button class="view-details" data-id="guide-3">View More</button>
+          </div>
+          <div class="guide-panel">
+            <img
+              src="/images/sunny-avatar.jpg"
+              alt="Sunny Avatar"
+              class="guide-avatar"
+            />
+            <h2 class="guide-name">Sunny</h2>
+            <p class="guide-speciality">Wildlife & Cultural Guide</p>
+            <p class="guide-short-bio">
+              Sunny is a knowledgeable guide who offers cultural and wildlife
+              tours that highlight Madagascar’s biodiversity and traditions.
+            </p>
+            <button class="view-details" data-id="guide-4">View More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews-section">
+      <div class="reviewContainer">
+        <h2>What Our Travelers Say</h2>
+        <div class="reviews-list" id="reviewsList">
+          <p>No reviews yet. Be the first!</p>
+        </div>
+        <h3>Leave a Review</h3>
+        <form id="reviewForm">
+          <label for="reviewerName">Your Name:</label>
+          <input type="text" id="reviewerName" name="reviewerName" required />
+
+          <label for="reviewText">Your Feedback:</label>
+          <textarea
+            id="reviewText"
+            name="reviewText"
+            rows="5"
+            required
+          ></textarea>
+
+          <label for="reviewRating">Rating:</label>
+          <select id="reviewRating" name="reviewRating" required>
+            <option value="">Select a rating</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="1">⭐</option>
+          </select>
+
+          <button type="submit">Submit Review</button>
+        </form>
+      </div>
+    </section>
+    <div class="modal-guide">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <img src="" alt="" class="modal-image" />
+        <h2></h2>
+        <h4></h4>
+        <p class="guide-long-bio"></p>
+        <div class="modal-guide-contacts">
+          <p>Email: <a href="" class="modal-guide-email"></a></p>
+          <p>Phone: <span class="modal-guide-phone"></span></p>
+        </div>
+        <div class="guide-trips-section">
+          <h3>Trips Offered by This Guide</h3>
+          <div class="trips-list" id="guideTripsList">
+            <p>Loading trips...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bookingModal">
+      <div class="modal-content">
+        <span class="closeBookingButton">&times;</span>
+        <h3>Book: <span class="bookingTripName"></span></h3>
+        <form action="" id="bookingForm">
+          <label for="bookingDate">Date:</label>
+          <input type="date" id="bookingDate" name="date" required />
+
+          <label for="numParticipants">Number of Participants:</label>
+          <input
+            type="number"
+            id="numParticipants"
+            name="numParticipants"
+            required
+            min="1"
+            max="12"
+          />
+
+          <label for="userName">Your Name:</label>
+          <input type="text" id="userName" name="userName" required />
+
+          <label for="userEmail">Your Email:</label>
+          <input type="email" id="userEmail" name="userEmail" required />
+
+          <button id="confirm-button" type="submit">Confirm Booking</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Chat modal -->
+
+    <button class="open-chat-btn" title="Open Chat">💬</button>
+
+    <div class="chat-modal">
+      <div class="chat-header">
+        <h3>Chat with Support</h3>
+        <span class="close-chat-btn">&times;</span>
+      </div>
+      <div class="chat-messages">
+        <div class="message-bubble received">
+          Hello! How can I help you today?
+        </div>
+      </div>
+      <div class="chat-input-area">
+        <input type="text" id="chatInput" placeholder="Type your message..." />
+        <button id="sendMessageBtn">Send</button>
+      </div>
+    </div>
     <footer class="footer"></footer>
   </body>
 </html>
