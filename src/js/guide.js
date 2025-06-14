@@ -1,6 +1,6 @@
 import { headerAndFooter } from "./utils.mjs";
 import { BookingForm } from "./BookingForm.mjs";
-import { Guide } from "./guide.mjs";
+import { Guide } from "./Guide.mjs";
 import { ReviewModule } from "./ReviewModule.mjs";
 import { Chat } from "./Chat.mjs";
 
