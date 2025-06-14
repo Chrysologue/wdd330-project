@@ -1,0 +1,38 @@
+[
+  {
+    "tripId": "trip-1",
+    "name": "The Green Tour of The East – 13 Days of Serenity & Wildlife",
+    "description": "Immerse yourself in Madagascar’s lush eastern landscapes, where nature flourishes and rare wildlife awaits.\n🌿 Andasibe – Encounter the Indri, Madagascar’s largest lemur, as its haunting calls echo through the rainforest.\n🌊 Sainte-Marie – Ferry to Boraha Island for pure tranquility—swim, snorkel, and spot majestic whales.\n🌙 Ankanin’ny Nofy – Experience a rare nighttime meeting with the elusive Aye-Aye, the world’s most mysterious lemur.\n🏞 Mantasoa – End your journey in peaceful, scenic surroundings before returning to the capital.\n🚗 Route: ANTANANARIVO → ANDASIBE → TAMATAVE → MAHAMBO → SAINTE-MARIE → ANKANIN’NY NOFY → MANTASOA",
+    "duration": "13 days",
+    "price": 1900,
+    "guideId": "guide-1",
+    "bookedDates": []
+  },
+  {
+    "tripId": "trip-2",
+    "name": "West Safari – 18 Days of Exploration",
+    "description": "Embark on a breathtaking journey through Madagascar’s western wonders—where baobab-studded landscapes, dramatic limestone formations, and pristine coastal gems await.\n🌳 Baobab Avenue & Tsingy – Witness Madagascar’s most iconic trees and explore the spectacular limestone labyrinth of Bemaraha.\n⚓ Belo sur Mer – Discover maritime traditions and a pristine biosphere along the untouched west coast.\n🏝 Ifaty & Beyond – Relax on sun-kissed beaches before delving into Isalo’s sculpted canyons and Ranomafana’s lush rainforest.\n🚗 Route: ANTANANARIVO → ANTSIRABE → MORONDAVA → TSINGY → BELO SUR MER → MANJA → IFATY → ISALO → RANOMAFANA",
+    "duration": "18 days",
+    "price": 2700,
+    "guideId": "guide-2",
+    "bookedDates": []
+  },
+  {
+    "tripId": "trip-3",
+    "name": "South Classic Tour – 17 Days of Discovery",
+    "description": "Unveil Madagascar’s breathtaking landscapes and rich cultural heritage on this extraordinary journey.\n🦋 Highland & Betsileo Traditions – Explore stunning terraced rice fields and majestic granite mountains, home to Madagascar’s playful lemurs.\n🦋 Ranomafana’s Enchanting Rainforest – Step into the misty rainforest, where rare primates and lush biodiversity create an unforgettable nature experience.\n🦋 Isalo & Mahafaly Tombs – Marvel at Isalo’s sculpted sandstone wonders and the sacred Mahafaly tombs, symbols of tradition and legacy.\n🦋 Ifaty – A Coastal Paradise – Relax on pristine beaches or venture into the baobab forest, blending marine and terrestrial adventures.\n🚗 Route: ANTANANARIVO → ANTSIRABE → RANOMAFANA → AMBALAVAO → ISALO → IFATY",
+    "duration": "17 days",
+    "price": 2100,
+    "guideId": "guide-3",
+    "bookedDates": []
+  },
+  {
+    "tripId": "trip-4",
+    "name": "East & West Adventure – 13 Days of Madagascar’s Contrasts",
+    "description": "Discover the island’s stunning diversity, from lush rainforests to dramatic rock formations.\n🌿 Andasibe – Wake to the haunting calls of the Indri, Madagascar’s largest lemur.\n🌳 Morondava – Stroll through the legendary Avenue of the Baobabs, nature’s timeless masterpiece.\n🏜 Tsingy of Bemaraha – Trek through jagged limestone formations and Madagascar’s untamed wilderness.\n🚗 Route: ANTANANARIVO → ANDASIBE → ANTSIRABE → MIANDRIVAZO → MORONDAVA → TSINGY",
+    "duration": "13 days",
+    "price": 1900,
+    "guideId": "guide-4",
+    "bookedDates": []
+  }
+]

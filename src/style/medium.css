@@ -116,8 +116,52 @@
     font-size: 1.3rem;
   }
 
-  .gallery-category img {
-    width: 270px;
-    height: 220px;
+  .gallery-category {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Guide Profile Styles for Medium Screens */
+  .guide-section {
+    padding: 60px 20px;
+  }
+
+  .guide-container h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+  }
+
+  .guide-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .guide-panel {
+    max-width: none;
+    padding: 35px;
+  }
+
+  .guide-avatar {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 25px;
+  }
+
+  .guide-name {
+    font-size: 2em;
+  }
+
+  .guide-speciality {
+    font-size: 1.2em;
+  }
+
+  .guide-short-bio {
+    font-size: 1em;
+  }
+
+  .view-details {
+    padding: 14px 28px;
+    font-size: 1.2em;
   }
 }

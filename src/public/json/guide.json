@@ -1,0 +1,38 @@
+[
+  {
+    "id": "guide-1",
+    "name": "Dore",
+    "speciality": "Wildlife & Adventure Guide",
+    "long_bio": "Dore is a skilled English-speaking guide known for leading immersive wildlife and adventure tours across Madagascar. With deep knowledge of the island’s rainforests and rare species, he offers unforgettable nature-filled experiences.",
+    "phone": "+261 44 65 489 36",
+    "email": "Dore@gmail.com",
+    "image_url": "/images/dore-avatar.jpg"
+  },
+  {
+    "id": "guide-2",
+    "name": "Aina",
+    "speciality": "Trekking Guide",
+    "long_bio": "Aina specializes in hiking tours through Madagascar’s scenic trails. Energetic and knowledgeable, he leads off-the-beaten-path adventures that reveal the island’s hidden beauty and charm.",
+    "phone": "+261 56 45 897 55",
+    "email": "Aina@gmail.com",
+    "image_url": "/images/aina-avatar.jpg"
+  },
+  {
+    "id": "guide-3",
+    "name": "Feno",
+    "speciality": "Expert Birding Guide",
+    "long_bio": "Feno is a passionate birdwatching expert with an eye for Madagascar’s rare species. His tours offer rich insights into local avifauna, making each outing a delight for nature lovers.",
+    "phone": "+261 55 63 485 96",
+    "email": "Feno@gmail.com",
+    "image_url": "/images/feno-avatar.jpg"
+  },
+  {
+    "id": "guide-4",
+    "name": "Sunny",
+    "speciality": "Wildlife & Cultural Guide",
+    "long_bio": "Sunny blends Madagascar’s wildlife and culture into each tour. Her warm approach and deep knowledge create engaging journeys through both nature and tradition.",
+    "phone": "+261 33 20 256 78",
+    "email": "Sunny@gmail.com",
+    "image_url": "/images/sunny-avatar.jpg"
+  }
+]

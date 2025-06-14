@@ -7,6 +7,7 @@
   --color-accent-primary: #007bff;
   --color-accent-secondary: #28a745;
   --color-highlight-hover: #dc3545;
+  --color-dark-text: #000000;
 }
 
 * {
@@ -294,12 +295,12 @@ body.no-transition {
 .cta-button {
   display: inline-block;
   background-color: var(--color-accent-primary);
-  color: var(--color-white);
+  color: white;
   padding: 16px 24px;
   text-decoration: none;
   border-radius: 4px;
   font-weight: bold;
-  font-size: 0.95em;
+  font-size: 1.1em;
   transition:
     background-color 0.3s ease,
     color 0.3s ease,
@@ -319,7 +320,7 @@ body.no-transition {
 }
 
 .cta-button.secondary-cta {
-  background-color: var(--color-accent-secondary);
+  background-color: var(--color-highlight-hover);
   margin-top: 20px;
 }
 
@@ -553,6 +554,7 @@ body.no-transition {
     box-shadow 0.3s ease;
   animation: fadeInUp 0.6s ease-out forwards;
   opacity: 0;
+  text-align: center;
 }
 
 .destination-card:hover {
@@ -584,15 +586,15 @@ body.no-transition {
 }
 
 .destination-card h4 {
-  font-size: 1.2em;
-  color: var(--color-accent-secondary);
-  margin-bottom: 10px;
+  font-size: 1.4em;
+  color: var(--color-accent-primary);
+  margin: 10px 0;
 }
 
 .destination-card p {
   font-size: 0.9em;
   color: var(--color-border-light);
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 
 .guide-card-container {
@@ -784,11 +786,9 @@ footer .container {
 }
 
 .gallery-category {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
   padding: 1rem;
   width: 100%;
   max-width: 1200px;
@@ -796,8 +796,8 @@ footer .container {
 }
 
 .gallery-category img {
-  width: 250px;
-  height: 200px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   display: block;
   margin-bottom: 1.5rem;
@@ -930,4 +930,510 @@ footer .container {
   object-fit: cover;
   border-radius: 6px;
   box-shadow: 0 2px 12px rgba(0 0 0 0.2);
+}
+
+/* Guide Profile */
+.guide-section {
+  margin-top: 6rem;
+  padding: 40px 20px;
+  background-color: var(--color-background-light);
+  text-align: center;
+}
+
+.guide-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.guide-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: var(--color-background-dark);
+  animation: slideInLeft 0.7s ease-out forwards;
+  opacity: 0;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 30px;
+}
+
+.guide-panel {
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-white);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+  will-change: transform, box-shadow;
+}
+
+.guide-panel:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.guide-panel:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.guide-panel:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.guide-panel:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.guide-panel:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.guide-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid var(--color-accent-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.guide-name {
+  font-size: 1.8em;
+  margin-bottom: 8px;
+  color: var(--color-background-dark);
+}
+
+.guide-speciality {
+  font-size: 1.1em;
+  font-style: italic;
+  color: var(--color-accent-primary);
+  margin-bottom: 20px;
+}
+
+.guide-short-bio {
+  font-size: 0.95em;
+  color: var(--color-text-primary);
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.view-details {
+  background-color: var(--color-accent-primary);
+  color: var(--color-white);
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.view-details:hover {
+  background-color: var(--color-accent-secondary);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-guide,
+.bookingModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-guide.active,
+.bookingModal.active {
+  display: flex;
+  /* Or block, depending on your layout preference */
+}
+
+.modal-content {
+  background-color: rgb(236, 236, 236);
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-button {
+  position: absolute;
+  font-size: 32px;
+  font-weight: bold;
+  top: 0;
+  right: 15px;
+  cursor: pointer;
+}
+
+.modal-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 2px solid rgb(32, 127, 172);
+  object-fit: cover;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  /* Center the content */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be adjusted */
+  max-width: 600px;
+  /* Max width for larger screens */
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add basic styling for close buttons */
+.close-button,
+.closeBookingButton {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus,
+.closeBookingButton:hover,
+.closeBookingButton:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Basic styling for trip cards inside the modal */
+.trip-card {
+  border: 1px solid #eee;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.trip-card h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.trip-card button {
+  background-color: #4caf50;
+  /* Green */
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.trip-card button:hover {
+  opacity: 0.8;
+}
+.trip-description {
+  width: 100%;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+/* Basic form styling */
+#bookingForm label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+#bookingForm input[type="date"],
+#bookingForm input[type="number"],
+#bookingForm input[type="text"],
+#bookingForm input[type="email"] {
+  width: calc(100% - 22px);
+  /* Adjust for padding and border */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#confirm-button {
+  background-color: #007bff;
+  /* Blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+#confirm-button:hover {
+  opacity: 0.9;
+}
+
+/* Chat Button */
+.open-chat-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 2em;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  /* Above modals */
+}
+
+.open-chat-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Chat Modal */
+.chat-modal {
+  display: none;
+  /* Hidden initially */
+  position: fixed;
+  bottom: 90px;
+  /* Above the chat button */
+  right: 20px;
+  width: 320px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1002;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-modal.active {
+  display: flex;
+}
+
+.chat-header {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-header h3 {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.close-chat-btn {
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.message-bubble {
+  padding: 8px 12px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.message-bubble.sent {
+  background-color: #e0f2f7;
+  /* Light blue */
+  align-self: flex-end;
+  /* Align to right */
+  margin-left: auto;
+}
+
+.message-bubble.received {
+  background-color: #e2e2e2;
+  /* Light grey */
+  align-self: flex-start;
+  /* Align to left */
+  margin-right: auto;
+}
+
+.chat-input-area {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+#chatInput {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+#sendMessageBtn {
+  background-color: #28a745;
+  /* Green */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#sendMessageBtn:hover {
+  background-color: #218838;
+}
+
+/* Reviews Section */
+.reviews-section {
+  background-color: #e6f7ff; /* Light blue background */
+  padding: 40px 0;
+  margin-top: 30px;
+}
+
+.reviews-section h2,
+.reviews-section h3 {
+  color: #0e1d33;
+  margin-bottom: 25px;
+}
+
+.reviews-list {
+  margin-bottom: 30px;
+  max-height: 400px; /* Limit height */
+  overflow-y: auto; /* Enable scrolling if many reviews */
+  padding-right: 10px; /* For scrollbar */
+}
+
+.review-card {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.review-card p {
+  margin-bottom: 8px;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.review-card .reviewer-info {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+/* Review Form */
+.reviewContainer h2,
+.reviewContainer h3,
+.reviewContainer p {
+  text-align: center;
+}
+#reviewForm {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#reviewForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+#reviewForm input[type="text"],
+#reviewForm textarea,
+#reviewForm select {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9em;
+}
+
+#reviewForm textarea {
+  resize: vertical;
+}
+
+#reviewForm button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#reviewForm button[type="submit"]:hover {
+  background-color: #218838;
 }
