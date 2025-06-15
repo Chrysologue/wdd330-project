@@ -1,0 +1,144 @@
+[
+  {
+    "id": "car-rental",
+    "name": "Car Rental",
+    "shortDescription": "Explore Madagascar in style – 4WDs, mini-vans, buses, all at your service.",
+    "longDescription": "Our extensive fleet of well-maintained vehicles, from rugged 4x4s for challenging terrain to comfortable mini-vans and spacious buses for group tours, ensures you travel Madagascar on your own terms. We offer flexible rental periods, comprehensive insurance, and the option to hire an experienced local driver for a truly immersive and worry-free adventure. All vehicles are regularly serviced to ensure safety and reliability on your journey.",
+    "imageUrl": "/images/services/car-rental.webp",
+    "priceInfo": "Flexible daily/weekly rates. Get a personalized quote.",
+    "features": [
+      "Wide vehicle selection",
+      "Self-drive or driver options",
+      "Comprehensive insurance"
+    ]
+  },
+  {
+    "id": "tour-package",
+    "name": "Tour Packages & Tailor-Made",
+    "shortDescription": "No two travelers are alike, and neither are our tours – personalized itineraries for an authentic experience.",
+    "longDescription": "Dive deep into Madagascar's wonders with our meticulously crafted tour packages. Whether you're seeking encounters with lemurs, exploring unique landscapes like Tsingy, or immersing yourself in local culture, we have an itinerary for you. We also specialize in creating tailor-made tours to perfectly match your interests, budget, and desired pace, ensuring an authentic and unforgettable Malagasy adventure designed just for you.",
+    "imageUrl": "/images/services/tour-package.webp",
+    "priceInfo": "Custom pricing based on itinerary. Inquire for details.",
+    "features": [
+      "Personalized itineraries",
+      "Expert local guides",
+      "Sustainable practices"
+    ]
+  },
+  {
+    "id": "ticketing",
+    "name": "Ticketing",
+    "shortDescription": "From flights to ferries, we secure your perfect travel ticketing.",
+    "longDescription": "Avoid the hassle of booking domestic travel. Our ticketing service simplifies your journey by securing domestic flight tickets to various regions across Madagascar, as well as ferry and boat tickets for island excursions. We leverage our local knowledge to find the best routes and schedules, ensuring seamless connections and saving you valuable time, allowing you to focus purely on your travel experience.",
+    "imageUrl": "/images/services/ticketing.webp",
+    "priceInfo": "Service fee applies + ticket cost.",
+    "features": [
+      "Domestic flights",
+      "Ferry bookings",
+      "Stress-free process"
+    ]
+  },
+  {
+    "id": "transfer",
+    "name": "Transfers",
+    "shortDescription": "From airport to adventure – reliable rides, tailored for you.",
+    "longDescription": "Experience smooth and reliable transportation throughout Madagascar with our private transfer services. From welcoming you at the airport and getting you comfortably to your accommodation, to inter-city travel and transport to national parks, our fleet of comfortable, air-conditioned vehicles and professional, punctual drivers are at your service. Enjoy peace of mind knowing your transport needs are expertly handled.",
+    "imageUrl": "/images/services/transfer.webp",
+    "priceInfo": "Rates based on distance & vehicle. Request a quote.",
+    "features": [
+      "Airport & inter-city",
+      "Comfortable vehicles",
+      "Punctual, professional drivers"
+    ]
+  },
+  {
+    "id": "wildlife-expedition",
+    "name": "Wildlife & Nature Expeditions",
+    "shortDescription": "Encounter Madagascar's unique lemurs, chameleons, and diverse ecosystems with expert guides.",
+    "longDescription": "Immerse yourself in Madagascar's unparalleled biodiversity with our specialized wildlife expeditions. Led by knowledgeable local naturalists, these tours take you deep into national parks like Andasibe, Ranomafana, and Isalo. Witness various species of lemurs in their natural habitat, spot colorful chameleons, geckos, and rare birds. Learn about the endemic flora, medicinal plants, and conservation efforts firsthand. We offer both day and nocturnal walks for comprehensive wildlife viewing.",
+    "imageUrl": "/images/services/wildlife-expedition.webp",
+    "priceInfo": "From $150 per person for group tours, custom quotes for private.",
+    "features": [
+      "Lemur tracking",
+      "Nocturnal wildlife walks",
+      "Birdwatching",
+      "Botanical tours",
+      "National park entry assistance"
+    ]
+  },
+  {
+    "id": "cultural-immersion",
+    "name": "Cultural Immersion & Village Visits",
+    "shortDescription": "Connect with local Malagasy communities, discover traditions, and experience authentic life.",
+    "longDescription": "Go beyond the usual tourist path and delve into the rich cultural tapestry of Madagascar. Our cultural tours offer unique opportunities to interact with local communities, visit traditional villages, witness authentic craft-making (like Antaimoro paper or Zafimaniry wood carving), and participate in daily life activities. Experience traditional music, local markets, and learn about Malagasy customs and 'Fady' (taboos) from your knowledgeable guide. These tours foster genuine connections and support local economies.",
+    "imageUrl": "/images/services/cultural-immersion.webp",
+    "priceInfo": "Starting from $80 per day, customized for unique experiences.",
+    "features": [
+      "Village homestays (optional)",
+      "Traditional craft workshops",
+      "Local market visits",
+      "Malagasy cooking experiences",
+      "Cultural etiquette guidance"
+    ]
+  },
+  {
+    "id": "adventure-trekking",
+    "name": "Adventure & Trekking Tours",
+    "shortDescription": "Conquer diverse landscapes, from rainforests to canyons, with guided trekking adventures.",
+    "longDescription": "For the adventurous spirit, our trekking tours offer a chance to explore Madagascar's stunning and varied landscapes on foot. Hike through lush rainforests, navigate the unique limestone formations of Tsingy, or trek across the dramatic canyons of Isalo. We cater to various fitness levels, from moderate day hikes to multi-day expeditions with camping options. Our experienced guides ensure your safety while providing insights into the geology, flora, and fauna of each region.",
+    "imageUrl": "/images/services/adventure-trekking.webp",
+    "priceInfo": "Dependent on duration and difficulty. Get a detailed itinerary and quote.",
+    "features": [
+      "Multi-day treks",
+      "Tsingy exploration",
+      "Canyon hikes",
+      "Camping options",
+      "Experienced wilderness guides"
+    ]
+  },
+  {
+    "id": "beach-island-getaways",
+    "name": "Beach & Island Getaways",
+    "shortDescription": "Relax on pristine white-sand beaches and explore idyllic islands off Madagascar's coast.",
+    "longDescription": "Escape to paradise with our beach and island getaway packages. Madagascar boasts some of the world's most beautiful coastlines and offshore islands like Nosy Be, Ile Sainte Marie, and Anakao. Enjoy snorkeling in crystal-clear waters, diving amongst vibrant coral reefs, relaxing on sun-drenched beaches, or exploring charming fishing villages. We arrange everything from luxury resorts to rustic beachfront bungalows, ensuring a perfect tropical escape tailored to your preferences.",
+    "imageUrl": "/images/services/beach-island-getaways.webp",
+    "priceInfo": "Packages from $300 per person (e.g., 3-day Nosy Be). Custom quotes available.",
+    "features": [
+      "Snorkeling & diving excursions",
+      "Relaxation on pristine beaches",
+      "Island hopping tours",
+      "Whale watching (seasonal)",
+      "Luxury & budget accommodation"
+    ]
+  },
+  {
+    "id": "photography-tours",
+    "name": "Photography Tours & Workshops",
+    "shortDescription": "Capture Madagascar's breathtaking landscapes, unique wildlife, and vibrant culture.",
+    "longDescription": "Designed for amateur and professional photographers alike, our specialized tours offer unparalleled opportunities to capture Madagascar's incredible beauty. Journey to prime locations for wildlife photography (lemurs, chameleons), stunning landscapes (baobab avenues, tsingy), and captivating cultural moments. Our guides, who often have photography experience themselves, will assist you in finding the best light and angles, ensuring you return with a truly remarkable portfolio.",
+    "imageUrl": "/images/services/photography-tours.webp",
+    "priceInfo": "Customized based on focus & duration. Inquire for specialized rates.",
+    "features": [
+      "Wildlife photography focus",
+      "Landscape photography sessions",
+      "Cultural portrait opportunities",
+      "Best light & location guidance",
+      "Small group sizes"
+    ]
+  },
+  {
+    "id": "sustainable-community-tourism",
+    "name": "Sustainable & Community Tourism",
+    "shortDescription": "Travel responsibly and contribute positively to local communities and conservation efforts.",
+    "longDescription": "Committed to responsible travel, our sustainable and community tourism initiatives allow you to explore Madagascar while making a positive impact. Engage in eco-friendly activities, visit community-led projects, learn about local conservation efforts, and ensure your tourism benefits the local people directly. We partner with initiatives that focus on reforestation, education, and fair trade, offering you a travel experience that aligns with ethical and environmental values.",
+    "imageUrl": "/images/services/sustainable-community-tourism.webp",
+    "priceInfo": "Donation/contribution components may apply. Inquire for specific projects.",
+    "features": [
+      "Eco-friendly activities",
+      "Visit community projects",
+      "Conservation awareness",
+      "Local handicraft support",
+      "Ethical travel practices"
+    ]
+  }
+]

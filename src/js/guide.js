@@ -1,7 +1,7 @@
 import { headerAndFooter } from "./utils.mjs";
 import { BookingForm } from "./BookingForm.mjs";
 import { Guide } from "./Guide.mjs";
-import { ReviewModule } from "./ReviewModule.mjs";
+import { Review } from "./Review.mjs";
 import { Chat } from "./Chat.mjs";
 
 headerAndFooter();
@@ -92,9 +92,9 @@ async function fetchTripsData() {
   );
 
   // 4. Instantiate the ReviewModule
-  const reviewModule = new ReviewModule(reviewsListElement, reviewFormElement);
+  const review = new Review(reviewsListElement, reviewFormElement);
 
-  // Initialize all event listeners for the Guide module
+ 
   guide.init();
   // Chat and ReviewModule init() are called in their constructors.
 })();
