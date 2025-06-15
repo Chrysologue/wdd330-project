@@ -1603,6 +1603,7 @@ body.no-scroll {
 /* Added: Search Bar Styling */
 .search-bar-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
@@ -1613,8 +1614,9 @@ body.no-scroll {
 }
 
 #serviceSearch {
-  flex-grow: 1;
-  flex-shrink: 1;
+  flex: 1 1 150px;
+  min-width: 0;
+  width: 100%;  
   padding: 0.8em 1em;
   border: 2px solid var(--color-border-light, #e0e0e0);
   border-radius: 25px;
@@ -1626,16 +1628,13 @@ body.no-scroll {
 #serviceSearch:focus {
   border-color: var(--color-primary, #0a4f41);
   box-shadow: 0 0 0 3px rgba(10, 79, 65, 0.2);
-  /* Subtle focus glow */
 }
 
 #clearSearchBtn {
   background-color: var(--color-text-muted, #7f8c8d);
-  /* Muted color */
   color: var(--color-text-light, #ffffff);
   border: none;
   border-radius: 50%;
-  /* Make it round */
   width: 35px;
   height: 35px;
   display: flex;
