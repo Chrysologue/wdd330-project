@@ -1608,11 +1608,13 @@ body.no-scroll {
   gap: 0.5rem;
   margin: 1.5rem auto 2.5rem;
   max-width: 400px;
+  width: 100%;
   padding: 0 1rem;
 }
 
 #serviceSearch {
   flex-grow: 1;
+  flex-shrink: 1;
   padding: 0.8em 1em;
   border: 2px solid var(--color-border-light, #e0e0e0);
   border-radius: 25px;
@@ -1871,6 +1873,7 @@ body.no-scroll {
   font-family: 'Poppins', sans-serif;
   font-size: 1em;
   line-height: 1.5;
+  flex-wrap: wrap;
 }
 
 .info-item .icon {
@@ -1885,6 +1888,8 @@ body.no-scroll {
   color: var(--color-text-primary);
   text-decoration: none;
   transition: color 0.3s ease;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .info-item a:hover {
