@@ -1,5 +1,5 @@
 // ReviewModule.js
-export class ReviewModule {
+export class Review {
   constructor(reviewsListElement, reviewFormElement) {
     this.reviewsListElement = reviewsListElement;
     this.reviewForm = reviewFormElement;

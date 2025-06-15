@@ -10,6 +10,12 @@ const dialogImage = document.querySelector(".dialog-content img");
 const closeBtn = document.getElementById("close-btn");
 const prevBtn = document.getElementById("previous-btn");
 const nextBtn = document.getElementById("next-btn");
+
+// NEW: Select the new elements
+const dialogCategoryTitle = document.getElementById("dialogCategoryTitle");
+const imageCaption = document.getElementById("imageCaption");
+const imageWrapper = document.querySelector(".image-wrapper");
+
 const gallery = new Gallery(
   categories,
   dialog,
@@ -17,6 +23,9 @@ const gallery = new Gallery(
   closeBtn,
   prevBtn,
   nextBtn,
+  dialogCategoryTitle, // Passed new element
+  imageCaption,        // Passed new element
+  imageWrapper         // Passed new element
 );
 
 gallery.init();

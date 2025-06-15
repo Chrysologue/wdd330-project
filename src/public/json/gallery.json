@@ -1,72 +1,252 @@
 {
   "culinary": [
-    "/images/culinary/culinary-01.jpg",
-    "/images/culinary/culinary-02.jpg",
-    "/images/culinary/culinary-03.jpg",
-    "/images/culinary/culinary-04.jpg",
-    "/images/culinary/culinary-05.jpg",
-    "/images/culinary/culinary-06.jpg",
-    "/images/culinary/culinary-07.jpg",
-    "/images/culinary/culinary-08.jpg",
-    "/images/culinary/culinary-09.jpg",
-    "/images/culinary/culinary-10.jpg"
+    {
+      "src": "/images/culinary/culinary-01.jpg",
+      "alt": "Malagasy-style fish stew"
+    },
+    {
+      "src": "/images/culinary/culinary-02.jpg",
+      "alt": "Grilled Malagasy Sausages"
+    },
+    {
+      "src": "/images/culinary/culinary-03.jpg",
+      "alt": "Grilled seafood platter by the coast"
+    },
+    {
+      "src": "/images/culinary/culinary-04.jpg",
+      "alt": "A Culinary Experience in Madagascar"
+    },
+    {
+      "src": "/images/culinary/culinary-05.jpg",
+      "alt": "Madagascar's Crispy Chicken Specialty"
+    },
+    {
+      "src": "/images/culinary/culinary-06.jpg",
+      "alt": "Beachside Barbecue"
+    },
+    {
+      "src": "/images/culinary/culinary-07.jpg",
+      "alt": "Fresh Garden Salad"
+    },
+    {
+      "src": "/images/culinary/culinary-08.jpg",
+      "alt": "Savoring Madagascar’s Grilled Lobster Specialties"
+    },
+    {
+      "src": "/images/culinary/culinary-09.jpg",
+      "alt": "Malagasy Seafood Feast"
+    },
+    {
+      "src": "/images/culinary/culinary-10.jpg",
+      "alt": "Authentic Grilled Fish Experience in Madagascar"
+    }
   ],
   "flagship": [
-    "/images/flagship/flagship-01.jpg",
-    "/images/flagship/flagship-02.jpg",
-    "/images/flagship/flagship-03.jpg",
-    "/images/flagship/flagship-04.jpg",
-    "/images/flagship/flagship-05.jpg",
-    "/images/flagship/flagship-06.jpg",
-    "/images/flagship/flagship-07.jpg",
-    "/images/flagship/flagship-08.jpg",
-    "/images/flagship/flagship-09.jpg",
-    "/images/flagship/flagship-10.jpg",
-    "/images/flagship/flagship-11.jpg"
+    {
+      "src": "/images/flagship/flagship-01.jpg",
+      "alt": "Mysterious Gaze of the Malagasy Lemur"
+    },
+    {
+      "src": "/images/flagship/flagship-02.jpg",
+      "alt": "Indri Lemur: Madagascar’s Enchanting Forest Dweller"
+    },
+    {
+      "src": "/images/flagship/flagship-03.jpg",
+      "alt": "Black-and-White Ruffed Lemur"
+    },
+    {
+      "src": "/images/flagship/flagship-04.jpg",
+      "alt": "Coquerel's Sifaka: Madagascar’s Agile and Expressive Lemur"
+    },
+    {
+      "src": "/images/flagship/flagship-05.jpg",
+      "alt": "Indri Lemur: A Rare and Enigmatic Forest Dweller of Madagascar"
+    },
+    {
+      "src": "/images/flagship/flagship-06.jpg",
+      "alt": "Madagascar’s Arboreal Mammal"
+    },
+    {
+      "src": "/images/flagship/flagship-07.jpg",
+      "alt": "Mother and Baby Lemur in Madagascar's Forest"
+    },
+    {
+      "src": "/images/flagship/flagship-08.jpg",
+      "alt": "Red-Bellied Lemur"
+    },
+    {
+      "src": "/images/flagship/flagship-09.jpg",
+      "alt": "Lemurs in Their Natural Habitat"
+    },
+    {
+      "src": "/images/flagship/flagship-10.jpg",
+      "alt": "Red Ruffed Lemur: Madagascar’s Vibrant Canopy Acrobat"
+    },
+    {
+      "src": "/images/flagship/flagship-11.jpg",
+      "alt": "Fluffy Forest Sentinel: Madagascar's Unique Arboreal Lemur"
+    }
   ],
   "wildlife": [
-    "/images/wildlife/wildlife-01.jpg",
-    "/images/wildlife/wildlife-02.jpg",
-    "/images/wildlife/wildlife-03.jpg",
-    "/images/wildlife/wildlife-04.jpg",
-    "/images/wildlife/wildlife-05.jpg",
-    "/images/wildlife/wildlife-06.jpg",
-    "/images/wildlife/wildlife-07.jpg",
-    "/images/wildlife/wildlife-08.jpg",
-    "/images/wildlife/wildlife-09.jpg"
+    {
+      "src": "/images/wildlife/wildlife-01.jpg",
+      "alt": "Indri lemur, the largest living lemur species"
+    },
+    {
+      "src": "/images/wildlife/wildlife-02.jpg",
+      "alt": "Parson's Chameleon (Calumma parsonii)"
+    },
+    {
+      "src": "/images/wildlife/wildlife-03.jpg",
+      "alt": "Brown Lemur (Eulemur fulvus)"
+    },
+    {
+      "src": "/images/wildlife/wildlife-04.jpg",
+      "alt": "Oustalet's Chameleo"
+    },
+    {
+      "src": "/images/wildlife/wildlife-05.jpg",
+      "alt": "Leaf-tailed gecko, perfectly camouflaged"
+    },
+    {
+      "src": "/images/wildlife/wildlife-06.jpg",
+      "alt": "Brookesia chameleon, one of the smallest reptiles"
+    },
+    {
+      "src": "/images/wildlife/wildlife-07.jpg",
+      "alt": "Panther Chameleon"
+    },
+    {
+      "src": "/images/wildlife/wildlife-08.jpg",
+      "alt": "Madagascar Day Gecko"
+    },
+    {
+      "src": "/images/wildlife/wildlife-09.jpg",
+      "alt": "Madagascar Ground Gecko"
+    }
   ],
   "ocean": [
-    "/images/oceans/ocean-01.jpg",
-    "/images/oceans/ocean-02.jpg",
-    "/images/oceans/ocean-03.jpg",
-    "/images/oceans/ocean-04.jpg",
-    "/images/oceans/ocean-05.jpg",
-    "/images/oceans/ocean-06.jpg",
-    "/images/oceans/ocean-07.jpg",
-    "/images/oceans/ocean-08.jpg",
-    "/images/oceans/ocean-09.jpg"
+    {
+      "src": "/images/oceans/ocean-01.jpg",
+      "alt": "Crystal clear waters of a Malagasy beach"
+    },
+    {
+      "src": "/images/oceans/ocean-02.jpg",
+      "alt": "Coral reef teeming with fish"
+    },
+    {
+      "src": "/images/oceans/ocean-03.jpg",
+      "alt": "Traditional dhow sailboat on the horizon"
+    },
+    {
+      "src": "/images/oceans/ocean-04.jpg",
+      "alt": "Sea turtle swimming gracefully underwater"
+    },
+    {
+      "src": "/images/oceans/ocean-05.jpg",
+      "alt": "Mangrove forest meeting the ocean"
+    },
+    {
+      "src": "/images/oceans/ocean-06.jpg",
+      "alt": "Secluded cove with pristine sands"
+    },
+    {
+      "src": "/images/oceans/ocean-07.jpg",
+      "alt": "Starfish on the shallow seabed"
+    },
+    {
+      "src": "/images/oceans/ocean-08.jpg",
+      "alt": "Surfer catching a wave in Madagascar"
+    },
+    {
+      "src": "/images/oceans/ocean-09.jpg",
+      "alt": "Sunset over the Indian Ocean"
+    }
   ],
   "horizon": [
-    "/images/horizon/horizon-01.jpg",
-    "/images/horizon/horizon-02.jpg",
-    "/images/horizon/horizon-03.jpg",
-    "/images/horizon/horizon-04.jpg",
-    "/images/horizon/horizon-05.jpg",
-    "/images/horizon/horizon-06.jpg",
-    "/images/horizon/horizon-07.jpg",
-    "/images/horizon/horizon-08.jpg",
-    "/images/horizon/horizon-09.jpg",
-    "/images/horizon/horizon-10.jpg",
-    "/images/horizon/horizon-11.jpg",
-    "/images/horizon/horizon-12.jpg",
-    "/images/horizon/horizon-13.jpg",
-    "/images/horizon/horizon-14.jpg",
-    "/images/horizon/horizon-15.jpg",
-    "/images/horizon/horizon-16.jpg",
-    "/images/horizon/horizon-17.jpg",
-    "/images/horizon/horizon-18.jpg",
-    "/images/horizon/horizon-19.jpg",
-    "/images/horizon/horizon-20.jpg",
-    "/images/horizon/horizon-21.jpg"
+    {
+      "src": "/images/horizon/horizon-01.jpg",
+      "alt": "Scenic Road Trip in Madagascar"
+    },
+    {
+      "src": "/images/horizon/horizon-02.jpg",
+      "alt": "Wildlife Observation in Madagascar"
+    },
+    {
+      "src": "/images/horizon/horizon-03.jpg",
+      "alt": "Waterfall Retreat in Madagascar"
+    },
+    {
+      "src": "/images/horizon/horizon-04.jpg",
+      "alt": "Exploring Madagascar's Waterfalls"
+    },
+    {
+      "src": "/images/horizon/horizon-05.jpg",
+      "alt": "Scenic Highway Through Madagascar's Forests"
+    },
+    {
+      "src": "/images/horizon/horizon-06.jpg",
+      "alt": "Canyon landscape with vibrant rock colors"
+    },
+    {
+      "src": "/images/horizon/horizon-07.jpg",
+      "alt": "Desert-like terrain with unique vegetation"
+    },
+    {
+      "src": "/images/horizon/horizon-08.jpg",
+      "alt": "Rolling hills under a dramatic cloudscape"
+    },
+    {
+      "src": "/images/horizon/horizon-09.jpg",
+      "alt": "Aerial view of a coastal village"
+    },
+    {
+      "src": "/images/horizon/horizon-10.jpg",
+      "alt": "A winding river through a valley"
+    },
+    {
+      "src": "/images/horizon/horizon-11.jpg",
+      "alt": "Limestone karsts jutting into the sky"
+    },
+    {
+      "src": "/images/horizon/horizon-12.jpg",
+      "alt": "Sunrise over an arid landscape"
+    },
+    {
+      "src": "/images/horizon/horizon-13.jpg",
+      "alt": "Volcanic peaks in the distance"
+    },
+    {
+      "src": "/images/horizon/horizon-14.jpg",
+      "alt": "Fields of colorful crops"
+    },
+    {
+      "src": "/images/horizon/horizon-15.jpg",
+      "alt": "Rural Malagasy village nestled in hills"
+    },
+    {
+      "src": "/images/horizon/horizon-16.jpg",
+      "alt": "Sun rays piercing through dense forest"
+    },
+    {
+      "src": "/images/horizon/horizon-17.jpg",
+      "alt": "Coastal road winding along the cliffs"
+    },
+    {
+      "src": "/images/horizon/horizon-18.jpg",
+      "alt": "The vastness of the Central Highlands"
+    },
+    {
+      "src": "/images/horizon/horizon-19.jpg",
+      "alt": "A small waterfall cascading into a pool"
+    },
+    {
+      "src": "/images/horizon/horizon-20.jpg",
+      "alt": "A farmer working in a rice field"
+    },
+    {
+      "src": "/images/horizon/horizon-21.jpg",
+      "alt": "Birds flying over a tranquil lake at dusk"
+    }
   ]
 }
