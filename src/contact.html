@@ -1,33 +1,147 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Contact Eco-Tour Guide for inquiries, bookings, and travel support in Madagascar. We're here to help you plan your perfect eco-adventure."
-    />
-    <meta
-      name="keywords"
-      content="Madagascar tours, eco-tour contact, travel support, guide booking, eco-tourism Madagascar, travel inquiries"
-    />
-    <meta name="author" content="Xyste Chrysologue" />
-    <title>Eco-Tour Guide</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/style/small.css" />
-    <link rel="stylesheet" href="/style/medium.css" />
-    <link rel="stylesheet" href="/style/large.css" />
-    <script src="/js/main.js" type="module" defer></script>
-  </head>
 
-  <body>
-    <header class="header"></header>
-    <main></main>
-    <footer class="footer"></footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Contact Eco-Tour Guide for inquiries, bookings, and travel support in Madagascar. We're here to help you plan your perfect eco-adventure." />
+  <meta name="keywords"
+    content="Madagascar tours, eco-tour contact, travel support, guide booking, eco-tourism Madagascar, travel inquiries" />
+  <meta name="author" content="Xyste Chrysologue" />
+  <title>Eco-Tour Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/style/small.css" />
+  <link rel="stylesheet" href="/style/medium.css" />
+  <link rel="stylesheet" href="/style/large.css" />
+  <script src="/js/contact.js" type="module" defer></script>
+</head>
+
+<body>
+  <header class="header"></header>
+  <main>
+    <section class="contact-section">
+      <div class="contact-header">
+        <h1>Let's Plan Your Madagascar Adventure!</h1>
+        <p class="section-intro">
+          Have questions about tours, itineraries, or anything else? Reach out
+          directly to your expert guide – no middlemen, just personalized
+          service.
+        </p>
+      </div>
+
+      <div class="contact-content-wrapper">
+        <div class="contact-info">
+          <h2>Get in Touch Directly</h2>
+          <div class="info-item">
+            <i class="fa-solid fa-envelope icon"></i>
+            <a href="mailto:info@ecotourmadagascar.com">info@ecotourmadagascar.com</a>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-phone icon"></i>
+            <a href="tel:+261341234567">+261 34 12 345 67</a>
+          </div>
+          <div class="info-item">
+            <i class="fa-brands fa-whatsapp icon"></i>
+            <a href="https://wa.me/261341234567" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot icon"></i>
+            <p>Rue de l'Indépendance, Antananarivo, Madagascar</p>
+          </div>
+          <div class="info-item">
+            <i class="fa-regular fa-clock icon"></i>
+            <p>
+              Monday - Friday: 9:00 AM - 5:00 PM EAT <br />
+              Saturday: 9:00 AM - 1:00 PM EAT <br />
+              Sunday: Closed
+            </p>
+          </div>
+
+          <div class="social-links">
+            <h3>Follow Us</h3>
+            <a href="https://facebook.com/ecotourmadagascar" target="_blank" aria-label="Facebook"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com/ecotourmadagascar" target="_blank" aria-label="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com/company/ecotourmadagascar" target="_blank" aria-label="LinkedIn"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <h2>Send Us a Message</h2>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="fullName">Full Name:</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Your Full Name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" placeholder="Inquiry about Wildlife Tour" required />
+            </div>
+
+            <div class="form-group">
+              <label for="itinerary">Preferred Itinerary (Optional):</label>
+              <select id="itinerary" name="itinerary">
+                <option value="">Select an itinerary</option>
+                <option value="wildlife">Wildlife Exploration</option>
+                <option value="ocean">Coastal & Ocean Discovery</option>
+                <option value="culinary">Culinary Journey</option>
+                <option value="horizon">Beyond the Horizon Landscapes</option>
+                <option value="flagship">Flagship Adventures</option>
+                <option value="custom">Custom Tour</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="6"
+                placeholder="Tell us about your travel plans or questions..." required></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn">Send Message</button>
+            <p class="form-status-message" id="formStatusMessage"></p>
+          </form>
+          <small class="privacy-note">We respect your privacy. Your information will only be used to
+            respond to your inquiry.</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Chat dialog -->
+  <button class="open-chat-btn" title="Open Chat">💬</button>
+
+  <div class="chat-modal">
+    <div class="chat-header">
+      <h3>Chat with Support</h3>
+      <span class="close-chat-btn">&times;</span>
+    </div>
+    <div class="chat-messages">
+      <div class="message-bubble received">
+        Hello! How can I help you today?
+      </div>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="chatInput" placeholder="Type your message..." />
+      <button id="sendMessageBtn">Send</button>
+    </div>
+  </div>
+  <footer class="footer"></footer>
+</body>
+
 </html>
