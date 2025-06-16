@@ -6,9 +6,9 @@ export class Gallery {
     closeBtn,
     prevBtn,
     nextBtn,
-    dialogCategoryTitle, 
-    imageCaption,      
-    imageWrapper,      
+    dialogCategoryTitle,
+    imageCaption,
+    imageWrapper,
     element = document,
   ) {
     this.categories = categories;
@@ -17,14 +17,14 @@ export class Gallery {
     this.closeBtn = closeBtn;
     this.prevBtn = prevBtn;
     this.nextBtn = nextBtn;
-    this.dialogCategoryTitle = dialogCategoryTitle; 
-    this.imageCaption = imageCaption;               
-    this.imageWrapper = imageWrapper;               
+    this.dialogCategoryTitle = dialogCategoryTitle;
+    this.imageCaption = imageCaption;
+    this.imageWrapper = imageWrapper;
     this.element = element;
     this.galleries = {};
     this.newGallery = [];
     this.currentIdex = 0;
-    this.currentGalleryName = ''; 
+    this.currentGalleryName = "";
     this.path = `/json/gallery.json`;
   }
 
@@ -37,7 +37,7 @@ export class Gallery {
       const data = await response.json();
       return data;
     } catch (err) {
-      console.error('Failed to fetch gallery data:', err); // More specific error
+      console.error("Failed to fetch gallery data:", err); // More specific error
       return {}; // Return empty object on error to prevent further issues
     }
   }
@@ -60,7 +60,8 @@ export class Gallery {
 
     // NEW: Click outside to close dialog
     this.dialog.addEventListener("click", (e) => {
-      if (e.target === this.dialog) { // Only close if the click is directly on the overlay
+      if (e.target === this.dialog) {
+        // Only close if the click is directly on the overlay
         this.closeDialog();
       }
     });
@@ -74,36 +75,38 @@ export class Gallery {
 
     if (!this.newGallery || this.newGallery.length === 0) {
       console.warn(`Gallery "${galleryName}" not found or is empty.`);
-      return; 
+      return;
     }
 
     this.currentIdex = startIndex;
 
     // Show loading spinner and dim image before loading new image
-    this.imageWrapper.classList.add('loading');
-    this.dialogImage.src = ''; // Clear current image source immediately
+    this.imageWrapper.classList.add("loading");
+    this.dialogImage.src = ""; // Clear current image source immediately
 
     // Preload image for smoother display
     const img = new Image();
     img.onload = () => {
       this.dialogImage.src = this.newGallery[this.currentIdex].src; // Use .src from the object
       this.dialogImage.alt = this.newGallery[this.currentIdex].alt; // Set alt text
-      this.imageWrapper.classList.remove('loading'); // Hide loader once loaded
+      this.imageWrapper.classList.remove("loading"); // Hide loader once loaded
       this.updateImageDetails(); // Update category title and caption
       this.updateNavigationButtons();
     };
     img.onerror = () => {
-      this.imageWrapper.classList.remove('loading');
-      this.dialogImage.src = '/images/placeholder.webp'; // Fallback image (create one!)
-      this.dialogImage.alt = 'Image failed to load.';
-      this.imageCaption.textContent = 'Image failed to load. Please try again.';
+      this.imageWrapper.classList.remove("loading");
+      this.dialogImage.src = "/images/placeholder.webp"; // Fallback image (create one!)
+      this.dialogImage.alt = "Image failed to load.";
+      this.imageCaption.textContent = "Image failed to load. Please try again.";
       this.updateNavigationButtons();
-      console.error(`Failed to load image: ${this.newGallery[this.currentIdex].src}`);
+      console.error(
+        `Failed to load image: ${this.newGallery[this.currentIdex].src}`,
+      );
     };
     img.src = this.newGallery[this.currentIdex].src; // Start loading the image
 
     this.dialog.classList.add("active");
-    this.element.body.classList.add('no-scroll'); // NEW: Lock body scroll
+    this.element.body.classList.add("no-scroll"); // NEW: Lock body scroll
   }
 
   showNextImage() {
@@ -119,24 +122,26 @@ export class Gallery {
 
   loadImageInDialog() {
     // Show loading spinner
-    this.imageWrapper.classList.add('loading');
-    this.dialogImage.src = ''; // Clear previous image
+    this.imageWrapper.classList.add("loading");
+    this.dialogImage.src = ""; // Clear previous image
 
     const img = new Image();
     img.onload = () => {
       this.dialogImage.src = this.newGallery[this.currentIdex].src;
       this.dialogImage.alt = this.newGallery[this.currentIdex].alt;
-      this.imageWrapper.classList.remove('loading'); // Hide loader
+      this.imageWrapper.classList.remove("loading"); // Hide loader
       this.updateImageDetails();
       this.updateNavigationButtons();
     };
     img.onerror = () => {
-      this.imageWrapper.classList.remove('loading');
-      this.dialogImage.src = '/images/placeholder.webp'; // Fallback
-      this.dialogImage.alt = 'Image failed to load.';
-      this.imageCaption.textContent = 'Image failed to load. Please try again.';
+      this.imageWrapper.classList.remove("loading");
+      this.dialogImage.src = "/images/placeholder.webp"; // Fallback
+      this.dialogImage.alt = "Image failed to load.";
+      this.imageCaption.textContent = "Image failed to load. Please try again.";
       this.updateNavigationButtons();
-      console.error(`Failed to load image: ${this.newGallery[this.currentIdex].src}`);
+      console.error(
+        `Failed to load image: ${this.newGallery[this.currentIdex].src}`,
+      );
     };
     img.src = this.newGallery[this.currentIdex].src;
   }
@@ -148,24 +153,27 @@ export class Gallery {
 
     // Optional: Visually hide buttons if there's only one image
     if (this.newGallery.length <= 1) {
-        this.nextBtn.style.display = 'none';
-        this.prevBtn.style.display = 'none';
+      this.nextBtn.style.display = "none";
+      this.prevBtn.style.display = "none";
     } else {
-        this.nextBtn.style.display = ''; // Reset to default display
-        this.prevBtn.style.display = '';
+      this.nextBtn.style.display = ""; // Reset to default display
+      this.prevBtn.style.display = "";
     }
   }
 
   // NEW: Update category title and image caption
   updateImageDetails() {
     const currentImage = this.newGallery[this.currentIdex];
-    this.dialogCategoryTitle.textContent = this.currentGalleryName.replace(/(\b\w)/g, char => char.toUpperCase()); // Capitalize first letter of each word
+    this.dialogCategoryTitle.textContent = this.currentGalleryName.replace(
+      /(\b\w)/g,
+      (char) => char.toUpperCase(),
+    ); // Capitalize first letter of each word
     this.imageCaption.textContent = currentImage.alt;
   }
 
   closeDialog() {
     this.dialog.classList.remove("active");
-    this.element.body.classList.remove('no-scroll'); // NEW: Unlock body scroll
+    this.element.body.classList.remove("no-scroll"); // NEW: Unlock body scroll
   }
 
   getKey() {

@@ -94,7 +94,6 @@ async function fetchTripsData() {
   // 4. Instantiate the ReviewModule
   const review = new Review(reviewsListElement, reviewFormElement);
 
- 
   guide.init();
   // Chat and ReviewModule init() are called in their constructors.
 })();

@@ -32,11 +32,7 @@
     "longDescription": "Avoid the hassle of booking domestic travel. Our ticketing service simplifies your journey by securing domestic flight tickets to various regions across Madagascar, as well as ferry and boat tickets for island excursions. We leverage our local knowledge to find the best routes and schedules, ensuring seamless connections and saving you valuable time, allowing you to focus purely on your travel experience.",
     "imageUrl": "/images/services/ticketing.webp",
     "priceInfo": "Service fee applies + ticket cost.",
-    "features": [
-      "Domestic flights",
-      "Ferry bookings",
-      "Stress-free process"
-    ]
+    "features": ["Domestic flights", "Ferry bookings", "Stress-free process"]
   },
   {
     "id": "transfer",
