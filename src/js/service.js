@@ -1,10 +1,9 @@
-import { Service } from './Service.mjs'
-import { Chat } from "./Chat.mjs"
-import { headerAndFooter } from "./utils.mjs"
+import { Service } from "./Service.mjs";
+import { Chat } from "./Chat.mjs";
+import { headerAndFooter } from "./utils.mjs";
 headerAndFooter();
 const parentElement = document.querySelector(".service-container");
 const service = new Service(parentElement);
-
 
 // --- DOM elements for Chat Modal ---
 const openChatBtn = document.querySelector(".open-chat-btn");
@@ -16,10 +15,10 @@ const sendMessageBtn = document.querySelector("#sendMessageBtn");
 
 // 3. Instantiate the Chat class
 const chat = new Chat(
-    openChatBtn,
-    chatModal,
-    closeChatBtn,
-    chatMessagesArea,
-    chatInput,
-    sendMessageBtn,
+  openChatBtn,
+  chatModal,
+  closeChatBtn,
+  chatMessagesArea,
+  chatInput,
+  sendMessageBtn,
 );

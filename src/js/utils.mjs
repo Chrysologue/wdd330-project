@@ -1,3 +1,5 @@
+import { highlightActiveLink } from "./common.mjs";
+
 const DESKTOP_BREAKPOINT = 768;
 let resizeTimeout;
 
@@ -88,5 +90,6 @@ export function headerAndFooter() {
     setupToggleMenu(header, hamburger, navLinks, body);
     setupResizeHandler(header, navLinks, body);
     setupLoadHandler(header, navLinks, body);
+    highlightActiveLink();
   });
 }

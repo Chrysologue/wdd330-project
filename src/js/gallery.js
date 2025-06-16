@@ -24,8 +24,8 @@ const gallery = new Gallery(
   prevBtn,
   nextBtn,
   dialogCategoryTitle, // Passed new element
-  imageCaption,        // Passed new element
-  imageWrapper         // Passed new element
+  imageCaption, // Passed new element
+  imageWrapper, // Passed new element
 );
 
 gallery.init();

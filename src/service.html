@@ -1,61 +1,70 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the eco-tourism services offered by Eco-Tour Guide, including guided treks, wildlife tours, cultural experiences, and custom adventures across Madagascar."
+    />
+    <meta
+      name="keywords"
+      content="eco-tour services, Madagascar tours, guided treks, wildlife experiences, cultural tourism, sustainable travel, Eco-Tour Guide"
+    />
+    <meta name="author" content="Xyste Chrysologue" />
+    <title>Eco-Tour Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/small.css" />
+    <link rel="stylesheet" href="/style/medium.css" />
+    <link rel="stylesheet" href="/style/large.css" />
+    <script src="/js/service.js" type="module"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Discover the eco-tourism services offered by Eco-Tour Guide, including guided treks, wildlife tours, cultural experiences, and custom adventures across Madagascar." />
-  <meta name="keywords"
-    content="eco-tour services, Madagascar tours, guided treks, wildlife experiences, cultural tourism, sustainable travel, Eco-Tour Guide" />
-  <meta name="author" content="Xyste Chrysologue" />
-  <title>Eco-Tour Guide</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/style/small.css" />
-  <link rel="stylesheet" href="/style/medium.css" />
-  <link rel="stylesheet" href="/style/large.css" />
-  <script src="/js/service.js" type="module" defer></script>
-</head>
+  <body>
+    <header class="header"></header>
+    <main>
+      <section class="service-section">
+        <h1 class="section-title">Our Services</h1>
+        <p class="section-intro">
+          Discover the wide range of services we offer to make your Madagascar
+          adventure unforgettable.
+        </p>
 
-<body>
-  <header class="header"></header>
-  <main>
-    <section class="service-section">
-      <h1 class="section-title">Our Services</h1>
-      <p class="section-intro">
-        Discover the wide range of services we offer to make your Madagascar adventure unforgettable.
-      </p>
+        <div class="search-bar-container">
+          <input
+            type="text"
+            id="serviceSearch"
+            placeholder="Search services..."
+            aria-label="Search services"
+          />
+          <button id="clearSearchBtn" aria-label="Clear search">X</button>
+        </div>
+        <div class="service-container"></div>
+      </section>
+    </main>
+    <!-- Chat modal -->
+    <button class="open-chat-btn" title="Open Chat">💬</button>
 
-      <div class="search-bar-container">
-        <input type="text" id="serviceSearch" placeholder="Search services..." aria-label="Search services" />
-        <button id="clearSearchBtn" aria-label="Clear search">X</button>
+    <div class="chat-modal">
+      <div class="chat-header">
+        <h3>Chat with Support</h3>
+        <span class="close-chat-btn">&times;</span>
       </div>
-      <div class="service-container"></div>
-    </section>
-  </main>
-  <!-- Chat modal -->
-  <button class="open-chat-btn" title="Open Chat">💬</button>
-
-  <div class="chat-modal">
-    <div class="chat-header">
-      <h3>Chat with Support</h3>
-      <span class="close-chat-btn">&times;</span>
-    </div>
-    <div class="chat-messages">
-      <div class="message-bubble received">
-        Hello! How can I help you today?
+      <div class="chat-messages">
+        <div class="message-bubble received">
+          Hello! How can I help you today?
+        </div>
+      </div>
+      <div class="chat-input-area">
+        <input type="text" id="chatInput" placeholder="Type your message..." />
+        <button id="sendMessageBtn">Send</button>
       </div>
     </div>
-    <div class="chat-input-area">
-      <input type="text" id="chatInput" placeholder="Type your message..." />
-      <button id="sendMessageBtn">Send</button>
-    </div>
-  </div>
-  <footer class="footer"></footer>
-</body>
-
+    <footer class="footer"></footer>
+  </body>
 </html>

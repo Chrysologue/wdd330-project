@@ -113,9 +113,11 @@ export class Guide {
     this.guideEmail.href = `mailto: ${data.email}`;
 
     this.modal.classList.add("active");
+    document.querySelector("body").classList.add("no-scroll");
   }
 
   hideGuideModal() {
     this.modal.classList.remove("active");
+    document.querySelector("body").classList.remove("no-scroll");
   }
 }
