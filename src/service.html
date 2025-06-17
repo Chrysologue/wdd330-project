@@ -35,6 +35,33 @@
           adventure unforgettable.
         </p>
 
+        <!-- Currency conversion -->
+        <div class="currency-converter-bar">
+          <input
+            type="number"
+            id="foreignAmount"
+            min="0"
+            placeholder="Amount"
+          />
+          <select id="currencySelect">
+            <option value="USD">$ USD</option>
+            <option value="EUR">€ EUR</option>
+            <option value="GBP">£ GBP</option>
+            <option value="JPY">¥ JPY</option>
+          </select>
+          <label for="mgaAmount" style="margin-left: 1em">MGA:</label>
+          <input
+            type="number"
+            id="mgaAmount"
+            min="0"
+            placeholder="Ariary"
+          />
+          <span
+            id="exchangeRateInfo"
+            
+          ></span>
+        </div>
+
         <div class="search-bar-container">
           <input
             type="text"
@@ -44,6 +71,7 @@
           />
           <button id="clearSearchBtn" aria-label="Clear search">X</button>
         </div>
+
         <div class="service-container"></div>
       </section>
     </main>
