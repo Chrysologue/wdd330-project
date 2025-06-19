@@ -1,4 +1,4 @@
-// BookingForm.js
+
 export class BookingForm {
   constructor(
     bookingModal,
@@ -11,11 +11,11 @@ export class BookingForm {
     this.bookingTripNameElement = bookingTripNameElement;
     this.closeBookingButton = closeBookingButton;
     this.bookingForm = bookingFormElement;
-    this.allTrips = allTripsData; // Full list of trips to get details
+    this.allTrips = allTripsData; 
     this.currentBookingTripId = null;
     this.currentBookingGuideId = null;
 
-    this.init(); // Initialize event listeners for this form
+    this.init(); 
   }
 
   init() {
@@ -65,7 +65,7 @@ export class BookingForm {
   handleBookingSubmit(event) {
     event.preventDefault(); // Prevent default form submission and page reload
 
-    // 1. Get form data
+    // Get form data
     const bookingDate = this.bookingForm.querySelector("#bookingDate").value;
     const numParticipants = parseInt(
       this.bookingForm.querySelector("#numParticipants").value,
@@ -73,7 +73,7 @@ export class BookingForm {
     const userName = this.bookingForm.querySelector("#userName").value;
     const userEmail = this.bookingForm.querySelector("#userEmail").value;
 
-    // 2. Access the stored trip and guide IDs
+    // Access the stored trip and guide IDs
     const tripId = this.currentBookingTripId;
     const guideId = this.currentBookingGuideId;
 
@@ -85,7 +85,7 @@ export class BookingForm {
       return;
     }
 
-    // 3. Find the actual trip object
+    // Find the actual trip object
     const selectedTrip = this.allTrips.find((trip) => trip.tripId === tripId);
 
     if (!selectedTrip) {
@@ -94,10 +94,10 @@ export class BookingForm {
       return;
     }
 
-    // 4. Basic Validation
+    // Basic Validation
     const bookingDateObj = new Date(bookingDate);
     const today = new Date();
-    today.setHours(0, 0, 0, 0); // Normalize today's date to compare correctly
+    today.setHours(0, 0, 0, 0); 
 
     if (bookingDateObj < today) {
       alert("Please select a future date for your booking.");
@@ -117,7 +117,6 @@ export class BookingForm {
       return;
     }
 
-    // 5. Simulate booking (for now, just log and provide feedback)
     const bookingDetails = {
       tripId,
       guideId,
@@ -126,13 +125,13 @@ export class BookingForm {
       numParticipants,
       userName,
       userEmail,
-      bookingDateTime: new Date().toISOString(), // When the booking was made
+      bookingDateTime: new Date().toISOString(),
     };
 
     console.log("Booking Confirmed:", bookingDetails);
-    alert("Booking successful! Thank you for your reservation."); // User feedback
+    alert("Booking successful! Thank you for your reservation.");
 
-    // Optional: Save booking to localStorage for demonstration
+    //Save booking to localStorage for demonstration
     this.saveBookingToLocalStorage(bookingDetails);
 
     // Reset form and hide modal

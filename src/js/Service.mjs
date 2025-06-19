@@ -37,7 +37,7 @@ export class Service {
     servicesToRender.forEach((service) => {
       const serviceCard = document.createElement("div");
       serviceCard.className = "service-card";
-      serviceCard.setAttribute("data-service-id", service.id); // Add data attribute for easier targeting
+      serviceCard.setAttribute("data-service-id", service.id); // Adding data attribute for easier targeting
 
       serviceCard.innerHTML = `
         <h3>${service.name}</h3>

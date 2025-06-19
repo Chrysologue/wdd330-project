@@ -6,9 +6,8 @@ import { Chat } from "./Chat.mjs";
 
 headerAndFooter();
 
-// script.js
 
-// --- DOM elements for the Guide Profile Modal ---
+//  DOM elements for the Guide Profile Modal
 const modal = document.querySelector(".modal-guide");
 const buttons = document.querySelectorAll(".view-details");
 const modalImage = document.querySelector(".modal-image");
@@ -20,29 +19,29 @@ const guideEmail = document.querySelector(".modal-guide-email");
 const closeButton = document.querySelector(".close-button");
 const guideTripsListElement = document.querySelector("#guideTripsList");
 
-// --- DOM elements for Review Module ---
+//DOM elements for Review Module
 const reviewsListElement = document.querySelector("#reviewsList");
 const reviewFormElement = document.querySelector("#reviewForm");
 
-// --- DOM elements for Chat Modal ---
+//DOM elements for Chat Modal
 const openChatBtn = document.querySelector(".open-chat-btn");
 const chatModal = document.querySelector(".chat-modal");
 const closeChatBtn = document.querySelector(".close-chat-btn");
 const chatMessagesArea = document.querySelector(".chat-messages");
 const chatInput = document.querySelector("#chatInput");
 const sendMessageBtn = document.querySelector("#sendMessageBtn");
-// --- DOM elements for the Booking Modal ---
+// DOM elements for the Booking Modal
 const bookingModal = document.querySelector(".bookingModal");
 const bookingTripNameElement = document.querySelector(
   ".bookingModal .bookingTripName",
 );
 const closeBookingButton = document.querySelector(".closeBookingButton");
-const bookingFormElement = document.querySelector("#bookingForm"); // NEW: Get the booking form itself
+const bookingFormElement = document.querySelector("#bookingForm");
 
-// Function to fetch all trip data (remains here as it's a global data dependency)
+// Function to fetch all trip data
 async function fetchTripsData() {
   try {
-    const response = await fetch("/json/trip.json"); // Ensure this path is correct
+    const response = await fetch("/json/trip.json"); 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -56,7 +55,7 @@ async function fetchTripsData() {
 (async () => {
   const allTripsData = await fetchTripsData();
 
-  // 1. Instantiate the BookingForm
+  // Instantiate the BookingForm
   const bookingFormInstance = new BookingForm(
     bookingModal,
     bookingTripNameElement,
@@ -65,7 +64,7 @@ async function fetchTripsData() {
     allTripsData,
   );
 
-  // 2. Create an instance of the Guide class
+  // Create an instance of the Guide class
   const guide = new Guide(
     modal,
     buttons,
@@ -81,7 +80,7 @@ async function fetchTripsData() {
     bookingFormInstance,
   );
 
-  // 3. Instantiate the Chat class
+  // Instantiate the Chat class
   const chat = new Chat(
     openChatBtn,
     chatModal,
@@ -91,9 +90,8 @@ async function fetchTripsData() {
     sendMessageBtn,
   );
 
-  // 4. Instantiate the ReviewModule
+  //Instantiate the ReviewModule
   const review = new Review(reviewsListElement, reviewFormElement);
 
   guide.init();
-  // Chat and ReviewModule init() are called in their constructors.
 })();
