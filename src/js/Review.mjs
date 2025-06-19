@@ -1,9 +1,9 @@
-// ReviewModule.js
+
 export class Review {
   constructor(reviewsListElement, reviewFormElement) {
     this.reviewsListElement = reviewsListElement;
     this.reviewForm = reviewFormElement;
-    this.localStorageKey = "travelAppReviews"; // Key for localStorage
+    this.localStorageKey = "travelAppReviews";
 
     this.init();
   }
@@ -88,7 +88,7 @@ export class Review {
     }
 
     const newReview = {
-      id: Date.now().toString(), // Simple unique ID
+      id: Date.now().toString(),
       name: reviewerName,
       text: reviewText,
       rating: reviewRating,
@@ -96,7 +96,7 @@ export class Review {
     };
 
     const currentReviews = this.getReviewsFromLocalStorage();
-    currentReviews.unshift(newReview); // Add new review to the beginning
+    currentReviews.unshift(newReview);
     this.saveReviewsToLocalStorage(currentReviews);
     this.displayReviews(currentReviews); // Re-render reviews
 

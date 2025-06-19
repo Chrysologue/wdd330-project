@@ -47,7 +47,7 @@ export class Chat {
     this.addMessage(messageText, "sent");
     this.chatInput.value = ""; // Clear input
 
-    // Simulate a bot response (optional)
+    // Simulate a bot response
     setTimeout(() => {
       const botResponse = this.generateBotResponse(messageText);
       this.addMessage(botResponse, "received");

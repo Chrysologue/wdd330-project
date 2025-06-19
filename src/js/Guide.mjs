@@ -1,4 +1,4 @@
-// Guide.js
+
 export class Guide {
   constructor(
     modal,

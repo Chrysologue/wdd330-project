@@ -2,7 +2,7 @@ import { Chat } from "./Chat.mjs";
 import { headerAndFooter } from "./utils.mjs";
 
 headerAndFooter();
-// --- DOM elements for Chat Modal ---
+// DOM elements for Chat Modal
 const openChatBtn = document.querySelector(".open-chat-btn");
 const chatModal = document.querySelector(".chat-modal");
 const closeChatBtn = document.querySelector(".close-chat-btn");
@@ -10,7 +10,7 @@ const chatMessagesArea = document.querySelector(".chat-messages");
 const chatInput = document.querySelector("#chatInput");
 const sendMessageBtn = document.querySelector("#sendMessageBtn");
 
-// 3. Instantiate the Chat class
+// Instantiate the Chat class
 const chat = new Chat(
   openChatBtn,
   chatModal,
@@ -37,13 +37,13 @@ function initializeContactForm() {
       fullName: contactForm.elements["fullName"].value.trim(),
       email: contactForm.elements["email"].value.trim(),
       subject: contactForm.elements["subject"].value.trim(),
-      itinerary: contactForm.elements["itinerary"].value, // No trim for select, empty string is valid
+      itinerary: contactForm.elements["itinerary"].value,
       message: contactForm.elements["message"].value.trim(),
-      timestamp: new Date().toISOString(), // Record submission time
-      location: "Antananarivo, Analamanga, Madagascar", // Current location, as requested
+      timestamp: new Date().toISOString(), 
+      location: "Antananarivo, Analamanga, Madagascar",
     };
 
-    // Basic validation (optional, HTML5 'required' handles most)
+    
     if (
       !formData.fullName ||
       !formData.email ||
@@ -83,7 +83,7 @@ function initializeContactForm() {
 
   function displayFormStatus(message, type) {
     formStatusMessage.textContent = message;
-    formStatusMessage.className = "form-status-message"; // Reset classes
+    formStatusMessage.className = "form-status-message";
     formStatusMessage.classList.add(type); // Add success or error class
     // Clear message after a few seconds
     setTimeout(() => {

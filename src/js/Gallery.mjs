@@ -37,7 +37,7 @@ export class Gallery {
       const data = await response.json();
       return data;
     } catch (err) {
-      console.error("Failed to fetch gallery data:", err); // More specific error
+      console.error("Failed to fetch gallery data:", err);
       return {}; // Return empty object on error to prevent further issues
     }
   }
@@ -58,10 +58,9 @@ export class Gallery {
     this.prevBtn.addEventListener("click", this.showPreviousImage.bind(this));
     this.closeBtn.addEventListener("click", this.closeDialog.bind(this));
 
-    // NEW: Click outside to close dialog
+    // Click outside to close dialog
     this.dialog.addEventListener("click", (e) => {
       if (e.target === this.dialog) {
-        // Only close if the click is directly on the overlay
         this.closeDialog();
       }
     });
@@ -87,15 +86,15 @@ export class Gallery {
     // Preload image for smoother display
     const img = new Image();
     img.onload = () => {
-      this.dialogImage.src = this.newGallery[this.currentIdex].src; // Use .src from the object
-      this.dialogImage.alt = this.newGallery[this.currentIdex].alt; // Set alt text
+      this.dialogImage.src = this.newGallery[this.currentIdex].src; 
+      this.dialogImage.alt = this.newGallery[this.currentIdex].alt;
       this.imageWrapper.classList.remove("loading"); // Hide loader once loaded
       this.updateImageDetails(); // Update category title and caption
       this.updateNavigationButtons();
     };
     img.onerror = () => {
       this.imageWrapper.classList.remove("loading");
-      this.dialogImage.src = "/images/placeholder.webp"; // Fallback image (create one!)
+      this.dialogImage.src = "/images/fallback.webp"; // Fallback image
       this.dialogImage.alt = "Image failed to load.";
       this.imageCaption.textContent = "Image failed to load. Please try again.";
       this.updateNavigationButtons();
@@ -106,7 +105,7 @@ export class Gallery {
     img.src = this.newGallery[this.currentIdex].src; // Start loading the image
 
     this.dialog.classList.add("active");
-    this.element.body.classList.add("no-scroll"); // NEW: Lock body scroll
+    this.element.body.classList.add("no-scroll"); // Lock body scroll
   }
 
   showNextImage() {
@@ -135,7 +134,7 @@ export class Gallery {
     };
     img.onerror = () => {
       this.imageWrapper.classList.remove("loading");
-      this.dialogImage.src = "/images/placeholder.webp"; // Fallback
+      this.dialogImage.src = "/images/fallback.webp"; // Fallback
       this.dialogImage.alt = "Image failed to load.";
       this.imageCaption.textContent = "Image failed to load. Please try again.";
       this.updateNavigationButtons();
@@ -151,7 +150,7 @@ export class Gallery {
     this.nextBtn.disabled = this.currentIdex === this.newGallery.length - 1;
     this.prevBtn.disabled = this.currentIdex === 0;
 
-    // Optional: Visually hide buttons if there's only one image
+    // Visually hide buttons if there's only one image
     if (this.newGallery.length <= 1) {
       this.nextBtn.style.display = "none";
       this.prevBtn.style.display = "none";
@@ -161,7 +160,7 @@ export class Gallery {
     }
   }
 
-  // NEW: Update category title and image caption
+  // Update category title and image caption
   updateImageDetails() {
     const currentImage = this.newGallery[this.currentIdex];
     this.dialogCategoryTitle.textContent = this.currentGalleryName.replace(
@@ -173,7 +172,7 @@ export class Gallery {
 
   closeDialog() {
     this.dialog.classList.remove("active");
-    this.element.body.classList.remove("no-scroll"); // NEW: Unlock body scroll
+    this.element.body.classList.remove("no-scroll"); //Unlock body scroll
   }
 
   getKey() {
